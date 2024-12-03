@@ -10,4 +10,10 @@ n4 = leia.questionFloat("\nDigite a Quarta nota: ")
 
 media = (n1 + n2 + n3 + n4) / 4;
 
-console.log(`Média final: ${media.toFixed(1)}`);
+console.log(`\nMédia final: ${media.toFixed(1)}`);
+
+if (media >= 6.0) {
+    console.log("\nVocê está Aprovado");
+} else {
+    console.log("\nVocê está Reprovado");
+}
