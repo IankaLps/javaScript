@@ -11,9 +11,9 @@ console.log('2 - SUBTRAÇÃO');
 console.log('3 - MULTIPLICAÇÃO');
 console.log('4 - DIVISÃO\n');
 
-let operacao = leia.questionFloat('\nDIGITE A OPERACAO: '); //VAI LÊ A OPERAÇÃO ESCOLHIDA
-let n1 = leia.questionFloat('DIGITE O PRIMEIRO NUMERO: '); //SOLICITAÇÃO DOS DADOS DE ENTRADA
-let n2 = leia.questionFloat('\nDIGITE O SEGUNDO NUMERO: ');
+let operacao = leia.questionInt('\nDIGITE A OPERACAO: '); //VAI LÊ A OPERAÇÃO ESCOLHIDA
+let n1 = leia.questionInt('DIGITE O PRIMEIRO NUMERO: '); //SOLICITAÇÃO DOS DADOS DE ENTRADA
+let n2 = leia.questionInt('\nDIGITE O SEGUNDO NUMERO: ');
 
 // ESTRUTURA SWITCH PARA DECIDIR QUAL OPERAÇÃO VAI SER ESCOLHIDA
 switch(operacao){
@@ -36,6 +36,5 @@ switch(operacao){
     default: //CASO DIGITE UM NÚMERO FORA DAS OPÇÕES DISPONIVEIS
         console.log('OPERACAO INVALIDA!') //VAI INFORMA OPERAÇÃO INVÁLIDA
 }
-// EXIBE A OPERAÇÃO REALIZADA E O RESULTADO DA OPERAÇÃO
-console.log(`\nOPERACAO: ${operacaoTexto}`);
-console.log(`\nVALOR TOTAL: ${valorTotal.toFixed(2)}`);
+
+console.log(`\nOPERACAO: ${operacaoTexto} \nVALOR TOTAL: ${valorTotal}`);
